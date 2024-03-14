@@ -2,8 +2,9 @@
 
 #include <iostream>
 using namespace std;
-int i, j, n, temp;
+
 int arr[20];
+int n;
 
 
 void input() {
@@ -31,7 +32,8 @@ void input() {
 
 }
 
-void insertionsSort() {
+void insertionSort() {
+	int i, j, temp;
 
 	
 
@@ -42,8 +44,8 @@ void insertionsSort() {
 		
 		while (j >= 0 && arr[j] > temp)  //step 4a
 		{
-			arr[j] = arr[j + 1];
-			j = j - 1; //step 4b
+			arr[j + 1] = arr[j];
+			j--; //step 4b
 		}
 
 		arr[j + 1] = temp;  //step 5
@@ -65,7 +67,7 @@ void display() {
 
 	int main() {
 		input();
-		insertionsSort();
+		insertionSort();
 		display();
 
 		system("pause");
