@@ -32,7 +32,7 @@ void input() {
 }
 
 void insertionsSort() {
-	int i, j, temp;
+
 	
 
 	for (i = 1; i <= n - 1; i++) { // step 1
