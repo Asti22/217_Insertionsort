@@ -7,7 +7,7 @@ int arr[20];
 
 
 void input() {
-	
+
 	while (true)
 	{
 		cout << "Masukan banyaknya elemen pada array : ";
